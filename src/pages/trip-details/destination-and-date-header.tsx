@@ -18,9 +18,11 @@ export function DestinationAndDateHeader() {
 
         <div className="w-px h-6 bg-zinc-800" />
 
-        {/* Maneira de enviar um conteúdo para algum componente 
-            O componte que receberá, tera uma propriedade children em sua interface*/}
-        <Button onClick={() => alert('teste')}>
+        {/* Quando precisamos componentizar algo como o botão, podemos passar qualquer coisa ao componente filho.
+            O componte que receberá, terá uma propriedade 'children' em sua interface, que permite a passagem de qualquer informação (texto, icones..)*/}
+        {/* Quando precisamos de estilos diferentes no mesmo botão, chamamos isso de 'variants' no CSS.
+        Podemos resolver isso usando uma lib: 'npm i tailwind-variants' */}
+        <Button variant="secondary">
           Alterar local/data
           <Settings2 className="size-5" />
         </Button>
