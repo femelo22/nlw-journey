@@ -9,3 +9,8 @@
 input {
     color-scheme: dark;
 }
+
+/* Style do DayPicker */
+:root {
+    --rdp-accent-color-dark: #BEF264;
+}
